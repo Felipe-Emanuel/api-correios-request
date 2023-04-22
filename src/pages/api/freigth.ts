@@ -3,13 +3,11 @@ import { calcularPrecoPrazo, PrecoPrazoRequest } from "correios-brasil/dist";
 import { addProductCart } from "../../components/database/clientCart";
 import { corsMiddleware } from "@middleware/Cors";
 
-const { cors, runMiddleware } = corsMiddleware()
+const { cors } = corsMiddleware()
 
 cors(['POST'])
 
 export default async function handlerUser(req: NextApiRequest, res: NextApiResponse) {
-
-  await runMiddleware(req, res, cors)
 
   if (req.method !== 'POST') {
     res.status(400).json({ message: "Metodo inválido. Por favor, use o metodo 'GET'" })

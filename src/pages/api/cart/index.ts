@@ -1,18 +1,17 @@
-import { NextApiRequest, NextApiResponse } from "next";
+import { NextApiResponse } from "next";
 import { NextRequest } from "next/server";
 import url from "url";
 import { productMocked } from "../../../productMocked";
 import { corsMiddleware } from "@middleware/Cors";
 
-const { cors, runMiddleware } = corsMiddleware();
+const { cors } = corsMiddleware();
 
 cors(["GET"]);
 
 export default async function handler(
-  req: NextRequest & NextApiRequest,
+  req: NextRequest,
   res: NextApiResponse
 ) {
-  await runMiddleware(req, res, cors);
 
   const { query } = url.parse(req.url, true);
 
