@@ -1,28 +1,11 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import { calcularPrecoPrazo, PrecoPrazoRequest } from "correios-brasil/dist";
 import { addProductCart } from "../../components/database/clientCart";
-import Cors from 'cors'
+import { corsMiddleware } from "@middleware/Cors";
 
-const cors = Cors({
-  methods: ['POST'],
-  origin: 'http://localhost:3000'
-})
+const { cors, runMiddleware } = corsMiddleware()
 
-function runMiddleware(
-  req: NextApiRequest,
-  res: NextApiResponse,
-  fn: Function
-) {
-  return new Promise((resolve, reject) => {
-    fn(req, res, (result: any) => {
-      if (result instanceof Error) {
-        return reject(result)
-      }
-
-      return resolve(result)
-    })
-  })
-}
+cors(['POST'])
 
 export default async function handlerUser(req: NextApiRequest, res: NextApiResponse) {
 

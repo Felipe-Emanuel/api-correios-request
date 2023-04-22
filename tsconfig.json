@@ -15,7 +15,18 @@
     "jsx": "preserve",
     "incremental": true,
     "paths": {
-      "@/*": ["./src/*"]
+      "@util/*": ["./src/components/util/*"],
+      "@animations/*": ["./src/components/animations/*"],
+      "@vectores/*": ["./src/components/vectores/*"],
+      "@menu/*": ["./src/components/layout/menu/*"],
+      "@layout/*": ["./src/components/layout/*"],
+      "@container/*": ["./src/components/containers/*"],
+      "@hooks/*": ["./src/data/hooks/*"],
+      "@contexts/*": ["./src/data/contexts/*"],
+      "@functions/*": ["./src/functions/*"],
+      "@models/*": ["./src/models/*"],
+      "@middleware/*": ["./src/middleware/*"],
+      "@database/*": ["./src/firebase/database/*"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
