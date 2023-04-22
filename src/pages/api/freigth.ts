@@ -5,7 +5,7 @@ import Cors from 'cors'
 
 const cors = Cors({
   methods: ['POST'],
-  origin: 'http://localhost:3000/'
+  origin: 'http://localhost:3000/cart'
 })
 
 function runMiddleware(
