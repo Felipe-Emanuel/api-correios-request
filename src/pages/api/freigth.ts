@@ -1,11 +1,12 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import { calcularPrecoPrazo, PrecoPrazoRequest } from "correios-brasil/dist";
 import { addProductCart } from "../../components/database/clientCart";
-import { corsMiddleware } from "@middleware/Cors";
+import Cors from 'cors'
 
-const { cors } = corsMiddleware()
-
-cors(['POST'])
+const cors = Cors({
+  methods: ['POST'],
+  origin: 'http://localhost:3000'
+})
 
 function runMiddleware(
   req: NextApiRequest,
