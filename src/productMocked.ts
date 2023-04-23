@@ -40,7 +40,7 @@ export const productMocked: Product[] = [
     weight: 2,
     dimensions: {
       sCepOrigem: "03582-040",
-      sCepDestino: "35240-000",
+      sCepDestino: "",
       nVlPeso: "2",
       nCdFormato: "1",
       nVlComprimento: "40",
@@ -134,7 +134,7 @@ export const productMocked: Product[] = [
     weight: 1,
     dimensions: {
       sCepOrigem: "03582-040",
-      sCepDestino: "48918-900",
+      sCepDestino: "",
       nVlPeso: "1",
       nCdFormato: "1",
       nVlComprimento: "20",
@@ -228,7 +228,7 @@ export const productMocked: Product[] = [
     weight: 1.5,
     dimensions: {
       sCepOrigem: "03582-040",
-      sCepDestino: "89654-000",
+      sCepDestino: "",
       nVlPeso: "1.5",
       nCdFormato: "1",
       nVlComprimento: "20",
