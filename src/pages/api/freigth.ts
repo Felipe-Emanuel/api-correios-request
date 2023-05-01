@@ -46,10 +46,6 @@ export default async function handlerUser(req: NextApiRequest, res: NextApiRespo
             deadline: response[index].PrazoEntrega,
             price: response[index].Valor
           },
-          dimensions: product.body = {
-            ...product.body.dimensions,
-            nCdServico: [ '04510', '04014' ],
-          },
           freight: product.body.freight = {
             PAC: {
               ...product.body.freight = response[0],
@@ -61,7 +57,11 @@ export default async function handlerUser(req: NextApiRequest, res: NextApiRespo
               obsFim: response[1].obsFim || '',
               MsgErro: response[1].MsgErro || ''
             },
-          }
+          },
+          dimensions: product.body = {
+            ...product.body.dimensions,
+            nCdServico: [ '04510', '04014' ],
+          },
         }
   
         await addProductCart(updatedProduct)

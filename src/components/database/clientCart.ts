@@ -21,7 +21,7 @@ export const addProductCart = async (product: DocumentData) => {
         await updateDoc(docRef, product);
       } else {
         const docRef = await addDoc(cartRef, product);
-        console.log("Produto Adicionado com ID: ", docRef.id);
+        return docRef
       }
     } catch (error) {
       console.error("Ocorreu um erro na adição ou atualização do produto", error);
