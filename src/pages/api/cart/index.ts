@@ -15,11 +15,15 @@ export default async function handler(
 
   const { query } = url.parse(req.url, true);
 
-  if (query.limit) {
-    res.status(200).json(productMocked);
+  if (query && typeof query.limit === "string") {
+    const limit = parseInt(query.limit);
+    if (!isNaN(limit) && limit >= 3) {
+      res.status(200).json(productMocked);
+      return;
+    }
   }
 
-  if (query.mock === "true") {
+  if (query?.mock === "true") {
     res.status(200).json(productMocked);
   } else {
     res
