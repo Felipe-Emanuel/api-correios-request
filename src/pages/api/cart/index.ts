@@ -18,7 +18,10 @@ export default async function handler(
   if (query && typeof query.limit === "string") {
     const limit = parseInt(query.limit);
     if (!isNaN(limit) && limit >= 3) {
-      res.status(200).json(productMocked);
+      const { cors } = corsMiddleware();
+      cors(["GET"])(req, res, async () => {
+        res.status(200).json(productMocked);
+      });
       return;
     }
   }
