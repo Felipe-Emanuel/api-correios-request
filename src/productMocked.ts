@@ -54,7 +54,7 @@ export const productMocked: Product[] = [
     choisedService: {
       deadline: "",
       price: "",
-      serviceCode: ""
+      serviceCode: "",
     },
     freight: {
       PAC: {
@@ -148,7 +148,7 @@ export const productMocked: Product[] = [
     choisedService: {
       deadline: "",
       price: "",
-      serviceCode: ""
+      serviceCode: "",
     },
     freight: {
       PAC: {
@@ -242,7 +242,101 @@ export const productMocked: Product[] = [
     choisedService: {
       deadline: "",
       price: "",
-      serviceCode: ""
+      serviceCode: "",
+    },
+    freight: {
+      PAC: {
+        Codigo: "",
+        Valor: "",
+        PrazoEntrega: "",
+        ValorSemAdicionais: "",
+        ValorMaoPropria: "",
+        ValorAvisoRecebimento: "",
+        ValorValorDeclarado: "",
+        EntregaDomiciliar: "",
+        EntregaSabado: "",
+        obsFim: "",
+        Erro: "",
+        MsgErro: "",
+      },
+      SEDEX: {
+        Codigo: "",
+        Valor: "",
+        PrazoEntrega: "",
+        ValorSemAdicionais: "",
+        ValorMaoPropria: "",
+        ValorAvisoRecebimento: "",
+        ValorValorDeclarado: "",
+        EntregaDomiciliar: "",
+        EntregaSabado: "",
+        obsFim: "",
+        Erro: "",
+        MsgErro: "",
+      },
+    },
+  },
+  {
+    id: 3,
+    freigthServiceChoise: "",
+    guestProductId: "",
+    alt: "b",
+    cardDescription: "a descrição do produto é incrível 3",
+    count: 0,
+    initialPrice: 79.99,
+    initialTotal: 0,
+    isLiked: false,
+    link: "/products/3",
+    productDescription:
+      "This is a high-quality wireless Bluetooth speaker with exceptional sound quality and a stylish design. It features a powerful bass and clear treble, making it perfect for any music lover. The speaker has a long battery life, and can be easily connected to any device through Bluetooth or an AUX cable. It's also lightweight and easy to carry, making it the perfect choice for outdoor activities.",
+    productName: "PRODUTO 3",
+    productPrice: 0,
+    productQtd: 1,
+    productViews: 0,
+    productComments: [
+      {
+        id: 0,
+        img: "https://randomuser.me/api/portraits/women/35.jpg",
+        alt: "a",
+        date: "02.02.2023",
+        userName: "John",
+        comment:
+          "I absolutely love this speaker! The sound quality is amazing and it's so easy to use. I highly recommend it to anyone who's looking for a high-quality wireless speaker.",
+      },
+      {
+        id: 1,
+        img: "https://randomuser.me/api/portraits/men/22.jpg",
+        alt: "a",
+        date: "01.02.2023",
+        userName: "Jane",
+        comment:
+          "I purchased this speaker for a party and it was a huge hit! Everyone loved the sound quality and the stylish design. I would definitely recommend it to anyone who's looking for a great speaker.",
+      },
+    ],
+    images: [
+      "https://picsum.photos/seed/4/800/600",
+      "https://picsum.photos/seed/3/800/600",
+      "https://picsum.photos/seed/2/800/600",
+      "https://picsum.photos/seed/1/800/600",
+      "https://picsum.photos/seed/5/800/600",
+    ],
+    weight: 1.5,
+    dimensions: {
+      sCepOrigem: "03582-040",
+      sCepDestino: "",
+      nVlPeso: "1.5",
+      nCdFormato: "1",
+      nVlComprimento: "20",
+      nVlAltura: "10",
+      nVlLargura: "15",
+      nCdServico: ["04510", "04014"],
+      nVlDiametro: "0",
+    },
+    isOnCart: false,
+    SKU: "LPM-125-RMj",
+    choisedService: {
+      deadline: "",
+      price: "",
+      serviceCode: "",
     },
     freight: {
       PAC: {
