@@ -114,7 +114,7 @@ export const productMocked: Product[] = [
       numberOfPurchases: 0,
       numberOfViews: 0,
     },
-    brand: "anime",
+    brand: "disney",
     type: "AF",
     productComments: [
       {
