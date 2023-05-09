@@ -51,20 +51,9 @@ export interface ProductViewInfo {
   numberOfViews: number;
 }
 
-
-export interface ProductView {
-  id: number;
-  id_produto: number;
-  data_visualizacao: Date;
-  hora_visualizacao: string;
-  fonte_trafego: string;
-  duracao_visualizacao: number;
-  numero_compras: number;
-  localizacao_geografica: string;
-  }
 export interface Product {
   id: number;
-  marca:
+  brand:
     | "marvel"
     | "dc"
     | "disney"
@@ -97,20 +86,6 @@ export interface Product {
   choisedService: ChoisedService;
   freight: Freight;
   productViewInfo: ProductViewInfo
-}
-
-export interface RecomendedTable {
-  id: number;
-  type: "3D" | "AF";
-  marvel: number;
-  dc: number;
-  disney: number;
-  anime: number;
-  starWars: number;
-  games: number;
-  statueDrawing: number;
-  drawing: number;
-  actionFigure: number;
 }
 
 export interface DataType {

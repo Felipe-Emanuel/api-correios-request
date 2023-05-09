@@ -23,7 +23,7 @@ export const productMocked: Product[] = [
       numberOfPurchases: 0,
       numberOfViews: 0,
     },
-    marca: "dc",
+    brand: "dc",
     type: "3D",
     images: [
       "https://picsum.photos/seed/1/800/600",
@@ -114,8 +114,8 @@ export const productMocked: Product[] = [
       numberOfPurchases: 0,
       numberOfViews: 0,
     },
-    marca: "dc",
-    type: "3D",
+    brand: "anime",
+    type: "AF",
     productComments: [
       {
         id: 0,
@@ -214,8 +214,8 @@ export const productMocked: Product[] = [
       numberOfPurchases: 0,
       numberOfViews: 0,
     },
-    marca: "dc",
-    type: "3D",
+    brand: "anime",
+    type: "AF",
     productComments: [
       {
         id: 0,
@@ -314,7 +314,7 @@ export const productMocked: Product[] = [
       numberOfPurchases: 0,
       numberOfViews: 0,
     },
-    marca: "dc",
+    brand: "starWars",
     type: "3D",
     productComments: [
       {
