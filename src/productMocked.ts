@@ -18,7 +18,13 @@ export const productMocked: Product[] = [
     productName: "Laptop XYZ",
     productPrice: 0,
     productQtd: 1,
-    productViews: 0,
+    productViewInfo: {
+      id: 0,
+      numberOfPurchases: 0,
+      numberOfViews: 0,
+    },
+    marca: "dc",
+    type: "3D",
     images: [
       "https://picsum.photos/seed/1/800/600",
       "https://picsum.photos/seed/2/800/600",
@@ -103,7 +109,13 @@ export const productMocked: Product[] = [
     productName: "Produto Premium",
     productPrice: 0,
     productQtd: 1,
-    productViews: 0,
+    productViewInfo: {
+      id: 1,
+      numberOfPurchases: 0,
+      numberOfViews: 0,
+    },
+    marca: "dc",
+    type: "3D",
     productComments: [
       {
         id: 0,
@@ -197,7 +209,13 @@ export const productMocked: Product[] = [
     productName: "Bluetooth Speaker",
     productPrice: 0,
     productQtd: 1,
-    productViews: 0,
+    productViewInfo: {
+      id: 2,
+      numberOfPurchases: 0,
+      numberOfViews: 0,
+    },
+    marca: "dc",
+    type: "3D",
     productComments: [
       {
         id: 0,
@@ -291,7 +309,13 @@ export const productMocked: Product[] = [
     productName: "PRODUTO 3",
     productPrice: 0,
     productQtd: 1,
-    productViews: 0,
+    productViewInfo: {
+      id: 3,
+      numberOfPurchases: 0,
+      numberOfViews: 0,
+    },
+    marca: "dc",
+    type: "3D",
     productComments: [
       {
         id: 0,
