@@ -44,7 +44,11 @@ interface ChoisedService {
   price: string;
   serviceCode: string;
 }
-
+export interface ProductLikeInfo {
+  id: number;
+  numberOfLikedPurchases: number;
+  numberOfLikes: number;
+}
 export interface ProductViewInfo {
   id: number;
   numberOfPurchases: number;
@@ -86,6 +90,7 @@ export interface Product {
   choisedService: ChoisedService;
   freight: Freight;
   productViewInfo: ProductViewInfo
+  productLikeInfo: ProductLikeInfo
 }
 
 export interface DataType {
