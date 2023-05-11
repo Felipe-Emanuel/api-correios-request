@@ -17,6 +17,7 @@ export const productMocked: Product[] = [
       "O Laptop XYZ é um dispositivo de alta performance com tela de 15 polegadas e processador Intel Core i7 de 10ª geração. Ele possui 16GB de memória RAM e um SSD de 512GB, oferecendo armazenamento rápido e confiável para suas necessidades. Além disso, sua placa de vídeo NVIDIA GeForce RTX 3070 permite que você execute jogos e aplicativos gráficos exigentes sem problemas. O Laptop XYZ também vem equipado com uma bateria de longa duração e um teclado retroiluminado para uma experiência de digitação confortável em ambientes com pouca luz.",
     productName: "Laptop XYZ",
     productPrice: 0,
+    recentlySeen: new Date(),
     productQtd: 1,
     productLikeInfo: {
       id: 0,
@@ -113,6 +114,7 @@ export const productMocked: Product[] = [
       "Este é um produto premium feito com materiais da mais alta qualidade. Possui um design elegante e sofisticado, com acabamentos impecáveis que garantem durabilidade e resistência. Ideal para quem busca conforto, praticidade e estilo.",
     productName: "Produto Premium",
     productPrice: 0,
+    recentlySeen: new Date(),
     productQtd: 1,
     productLikeInfo: {
       id: 0,
@@ -218,6 +220,7 @@ export const productMocked: Product[] = [
       "This is a high-quality wireless Bluetooth speaker with exceptional sound quality and a stylish design. It features a powerful bass and clear treble, making it perfect for any music lover. The speaker has a long battery life, and can be easily connected to any device through Bluetooth or an AUX cable. It's also lightweight and easy to carry, making it the perfect choice for outdoor activities.",
     productName: "Bluetooth Speaker",
     productPrice: 0,
+    recentlySeen: new Date(),
     productQtd: 1,
     productLikeInfo: {
       id: 0,
@@ -323,6 +326,7 @@ export const productMocked: Product[] = [
       "This is a high-quality wireless Bluetooth speaker with exceptional sound quality and a stylish design. It features a powerful bass and clear treble, making it perfect for any music lover. The speaker has a long battery life, and can be easily connected to any device through Bluetooth or an AUX cable. It's also lightweight and easy to carry, making it the perfect choice for outdoor activities.",
     productName: "PRODUTO 3",
     productPrice: 0,
+    recentlySeen: new Date(),
     productQtd: 1,
     productLikeInfo: {
       id: 0,

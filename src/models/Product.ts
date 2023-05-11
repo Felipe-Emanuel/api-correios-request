@@ -69,6 +69,7 @@ export interface Product {
     | "actionFigure";
   type: "3D" | "AF";
   guestProductId: string;
+  recentlySeen: Date;
   freigthServiceChoise: string;
   count: number;
   productPrice: number;
